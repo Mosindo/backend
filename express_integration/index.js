@@ -50,5 +50,5 @@ app.get('/:pageName?', function (req, res) {
     // const page = cuiZine.find(
     //     (cuiZine)=> cuiZine.pageName === req.params.pageName
     // )
-    // res.redirect(page.pageHtml);
+    // res.redirect(page.pageHtml)
 });
