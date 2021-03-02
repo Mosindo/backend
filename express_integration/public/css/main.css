@@ -1,0 +1,170 @@
+body {
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+h1, h2, h3, h4, h5, h6, label {
+    font-family: Courgette, Georgia, serif;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.navbar-brand {
+    font-family: Courgette, Georgia, serif;
+    font-size: 1em;
+}
+
+.nav-open nav {
+    background: rgba(0, 0, 0, 1);
+}
+
+.background-cuisine {
+    background: url(../img/header.jpg) center center;
+}
+
+header {
+    height: 500px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+header img {
+    width: 75px;
+}
+header .container-fluid {
+    background: rgba(0, 0, 0, .8);
+    height: 100%;
+}
+
+header h1, header h2 {
+    color: white;
+}
+
+
+header .col-12 {
+    padding-top: 128px;
+}
+
+aside h6 {
+    margin-top: 16px;
+}
+
+aside .section .form-group {
+    margin-bottom: 0px;
+}
+
+aside .section button {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+aside .section .btn-primary:hover {
+    background: black;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: #333333;
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,.25);
+}
+
+.social-icons ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-icons i {
+    color: black;
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+
+.social-icons .fa-youtube {
+    padding: 8px;
+}
+
+.social-icons i:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+aside .social-icons .fa-facebook:hover {
+    background-color: #3b5998;
+}
+aside .social-icons .fa-youtube:hover {
+    background-color: #e64a41;
+}
+aside .social-icons .fa-twitter:hover {
+    background-color: #00aced;
+}
+
+footer {
+    color: white;
+    background: black;
+    margin-top: 48px;
+    padding-top: 64px;
+}
+
+footer .social-icons i {
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+footer .section {
+    margin-bottom: 24px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer .social-icons i:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+footer .section button {
+    background: black;
+    color: white;
+    border-color: white;
+}
+
+footer .section button:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.logo {
+    opacity: 0;
+    background: url(../img/logo_square_white.png) rgba(0, 0, 0, .7) no-repeat center center;
+    background-size: 30px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s;
+}
+article:hover .logo {
+    opacity: 1;
+    transition: .5s;
+}

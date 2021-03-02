@@ -1,0 +1,52 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.background-post {
+  background-image: url(../img/articles/suzette/suzette-header.jpg);
+}
+
+header .container-fluid {
+  padding: 48px;
+  background: none;
+}
+
+header h1 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.post-content {
+  margin-top: 32px;
+}
+.post-content p:first-of-type:first-letter {
+  font-size: 70px;
+  font-weight: 600;
+  color: #aaa;
+  float: left;
+  line-height: 20px;
+  margin: 6px 10px 0px -5px;
+}
+
+.author {
+  margin: 24px 0;
+  padding: 32px 0;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.comment-form {
+  padding: 32px 0;
+  margin-bottom: 24px;
+}
+
+.media {
+  margin: 16px 0;
+}
+
+.media img {
+  width: 64px;
+}
+
+.media .media img {
+  opacity: 0.5;
+}

@@ -1,0 +1,12 @@
+.background-team {
+    background-image: url(../img/team/team.jpg);
+}
+
+.post-content {
+    padding-top: 24px;
+}
+.post-content img {
+    float: left;
+    width: 300px;
+    margin: 0 16px 16px 0;
+}

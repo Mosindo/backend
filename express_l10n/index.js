@@ -29,13 +29,23 @@ app.listen(port,()=>{console.log('server launch')});
 
 
 
-app.get('/:lang', (req, res) => {
-    if(req.params.lang == "fr"){
-    res.render('home',{lang :translations[0].traductio})}
-    else if(req.params.lang== "es"){
-        res.render('home',{lang :translations[1].traductio})}
-    else if(req.params.lang== "en"){
-        res.render('home',{lang :translations[2].traductio})};
-    
+app.get('/:lang?', (req, res) => {
+    // if(req.params.lang == "fr"){
+    // res.render('home',{lang :translations[0].traduction})}
+    // else if(req.params.lang== "es"){
+    //     res.render('home',{lang :translations[1].traduction})}
+    // else if(req.params.lang== "en"){
+    //     res.render('home',{lang :translations[2].traduction})};
+    // else{}
+    if(req.params.lang === undefined){
+        res.render('home',{
+            lang: translations.fr.traduction  
+        })
+    }
+    else {
+        res.render("home", {
+            lang: translations[req.params.lang].traduction,
+        })
+    }
 });
 

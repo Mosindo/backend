@@ -1,0 +1,11 @@
+header {
+    background-image: url(../img/team/team.jpg);
+}
+
+.post-content {
+    padding-top: 40px;
+}
+
+.post-content .name, .post-content .picture {
+    text-align: center;
+}

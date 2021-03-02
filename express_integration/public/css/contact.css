@@ -1,0 +1,21 @@
+header {
+    margin-bottom: 32px;
+}
+.post-content h2 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 100%;
+}

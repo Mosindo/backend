@@ -1,0 +1,44 @@
+
+header img {
+    width: 75px;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 24px 0 8px;
+}
+
+header h1, header h2 {
+    color: white;
+}
+
+.content {
+    margin-top: 48px;
+}
+
+.content a {
+    color: #333333;
+}
+
+.content  h2 {
+    text-align: center;
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+    margin-bottom: 48px;
+}
+
+.content article {
+    margin-bottom: 8px;
+}
+
+article .picture {
+    position: relative;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+article .summary {
+
+}
+
