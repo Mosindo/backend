@@ -18,8 +18,11 @@ app.get('/login', function (req, res) {
 
 app.use(express.urlencoded({extended:true}))
 app.post('/login', function (req, res) {
-   console.log(req.body)
-   res.redirect('/');
+
+   if(  req.body.password === "" && req.body.user ===""){
+       res.render('login',{error:"please login"})
+   }else{ res.redirect('/');}
+  
 });
 
 app.listen(port,()=>{console.log('server launch')});
