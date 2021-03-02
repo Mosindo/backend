@@ -7,8 +7,19 @@ const port = 8000;
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
+
 app.get('/', function (req, res) {
     res.render('home',{lang :translations[0].traductio});
+});
+
+app.get('/login', function (req, res) {
+    res.render('login');
+});
+
+app.use(express.urlencoded({extended:true}))
+app.post('/login', function (req, res) {
+   console.log(req.body)
+   res.redirect('/');
 });
 
 app.listen(port,()=>{console.log('server launch')});
