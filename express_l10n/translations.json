@@ -1,19 +1,18 @@
 [
     {
-        "fr": {
+         
+            "lang":"fr",
             "traduction":"Bonjour ,ca va ?"
-        }
+        
     },
 
     {
-        "es":{ 
+            "lang":"fr",
             "traduction":"?Hola como estas ?"
-        }
     },
     
     {
-        "en": {
-            "traduction":"Hello how are you ?"
-        }
+        "lang":"en",
+        "traduction":"hello, how are you ?"
     }
 ]

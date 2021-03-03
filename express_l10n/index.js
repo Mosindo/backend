@@ -13,14 +13,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/login', function (req, res) {
-    res.render('login');
+    res.render('login', {error:false});
 });
 
 app.use(express.urlencoded({extended:true}))
 app.post('/login', function (req, res) {
 
-   if(  req.body.password === "" && req.body.user ===""){
-       res.render('login',{error:"please login"})
+   if(  req.body.password.length < 3 ){
+       res.render('login',{error:true})
    }else{ res.redirect('/');}
   
 });
@@ -30,22 +30,13 @@ app.listen(port,()=>{console.log('server launch')});
 
 
 app.get('/:lang?', (req, res) => {
-    // if(req.params.lang == "fr"){
-    // res.render('home',{lang :translations[0].traduction})}
-    // else if(req.params.lang== "es"){
-    //     res.render('home',{lang :translations[1].traduction})}
-    // else if(req.params.lang== "en"){
-    //     res.render('home',{lang :translations[2].traduction})};
-    // else{}
-    if(req.params.lang === undefined){
-        res.render('home',{
-            lang: translations.fr.traduction  
-        })
-    }
-    else {
-        res.render("home", {
-            lang: translations[req.params.lang].traduction,
-        })
-    }
+    if(req.params.lang == "fr"){
+    res.render('home',{lang :translations[0].traduction})}
+    else if(req.params.lang== "es"){
+        res.render('home',{lang :translations[1].traduction})}
+    else if(req.params.lang== "en"){
+        res.render('home',{lang :translations[2].traduction})}
+    else {  res.render('home')};
+ 
 });
 

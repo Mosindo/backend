@@ -43,12 +43,10 @@ app.listen(port ,()=>{
 })
 
 app.get('/', function (req, res) {
-    res.redirect('index.html');
+    res.redirect(cuiZine.pageHtml[0]);
 });
 
 app.get('/:pageName?', function (req, res) {
-    // const page = cuiZine.find(
-    //     (cuiZine)=> cuiZine.pageName === req.params.pageName
-    // )
-    // res.redirect(page.pageHtml)
+    if(req.params.pageName === cuiZine.pageName){
+    res.redirect(cuiZine.pageHtml)}
 });

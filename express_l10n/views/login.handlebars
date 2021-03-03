@@ -1,7 +1,8 @@
 <h1>Mon formulaire</h1>
 
 <form method="post" action="/login">
+    {{#if error }} <p>please login </p>{{/if}}
     <input type="text" name="user" class="#"/> 
     <input type="password" name="password" class="#"/> 
-    <button onClick={ {{#if error }} {{error}} {{/if}} } type="submit" class="btn btn-primary"> login</button>
+    <button  type="submit" class="btn btn-primary"> login</button>
 </form>
