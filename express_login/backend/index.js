@@ -9,6 +9,7 @@ const userRoute = require("./controllers/user");
 const app = express();
 const config = require("./config");
 const { mongoDB } = require("./config");
+const dotenv = require("dotenv").config();
 
 app.use(cors());
 
